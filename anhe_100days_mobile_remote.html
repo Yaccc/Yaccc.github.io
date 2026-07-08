@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>谢安禾百日宴邀请函</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red1:#b1001e;
+    --red2:#cf1733;
+    --red3:#760010;
+    --ink:#2a1714;
+    --paper:#fff7ef;
+    --paper2:#fff1e4;
+    --gold1:#f6de9b;
+    --gold2:#c99a3b;
+    --line:rgba(42,23,20,.14);
+    --muted:rgba(42,23,20,.66);
+    --shadow:0 18px 55px rgba(40,10,12,.30);
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:
+      radial-gradient(520px 380px at 18% 10%, rgba(246,222,155,.55), transparent 55%),
+      radial-gradient(520px 380px at 92% 22%, rgba(246,222,155,.42), transparent 58%),
+      radial-gradient(420px 300px at 20% 78%, rgba(255,235,210,.35), transparent 62%),
+      radial-gradient(900px 520px at 70% 88%, rgba(255,180,170,.22), transparent 60%),
+      linear-gradient(180deg,var(--red2) 0%, var(--red1) 35%, var(--red3) 100%);
+    color:var(--ink);
+    font-family:"Noto Serif SC",serif;
+    -webkit-font-smoothing:antialiased;
+    padding:calc(env(safe-area-inset-top) + 14px) 14px calc(env(safe-area-inset-bottom) + 26px);
+    display:flex;justify-content:center;
+  }
+
+  .phone{width:min(420px,100%)}
+
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:8px 4px 14px;
+  }
+  .brand{display:flex;flex-direction:column;gap:4px}
+  .brand .t1{
+    font-family:"Noto Sans SC",sans-serif;
+    font-size:12px;
+    letter-spacing:3px;
+    color:rgba(255,255,255,.92);
+  }
+  .brand .t2{
+    font-size:12px;
+    letter-spacing:2px;
+    color:rgba(246,222,155,.92);
+  }
+
+  .chip{
+    font-family:"Noto Sans SC",sans-serif;
+    font-size:12px;
+    letter-spacing:2px;
+    border:1px solid rgba(255,255,255,.34);
+    color:rgba(255,255,255,.95);
+    padding:8px 12px;
+    border-radius:999px;
+    text-decoration:none;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+  }
+
+  .card{
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid rgba(255,255,255,.24);
+    background:rgba(255,255,255,.22);
+    backdrop-filter:blur(14px);
+  }
+
+  .hero{
+    background:linear-gradient(180deg, rgba(255,247,239,.92), rgba(255,241,228,.82));
+  }
+
+  .photo{
+    position:relative;
+    width:100%;
+    aspect-ratio:3/4;
+    background:linear-gradient(135deg, rgba(201,154,59,.22), rgba(255,255,255,.88));
+  }
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+  .photo::after{
+    content:"";
+    position:absolute;inset:0;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0) 58%, rgba(0,0,0,.55) 100%),
+      radial-gradient(900px 520px at 30% -10%, rgba(246,222,155,.26), transparent 55%);
+    pointer-events:none;
+  }
+
+  .content{padding:16px 16px 14px}
+
+  .headline{margin-bottom:12px}
+  .headline .cn{font-size:26px;letter-spacing:6px;font-weight:800;color:#7a0013}
+  .headline .sub{margin-top:6px;font-family:"Noto Sans SC",sans-serif;font-size:12px;letter-spacing:3px;color:rgba(122,0,19,.72)}
+
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .meta .item{border:1px solid var(--line);border-radius:14px;padding:12px 12px;background:rgba(255,255,255,.72)}
+  .meta .k{font-family:"Noto Sans SC",sans-serif;font-size:11px;letter-spacing:2px;color:var(--muted)}
+  .meta .v{margin-top:6px;font-size:15px;line-height:1.5}
+  .meta .v small{display:block;margin-top:4px;color:var(--muted);font-size:12px;letter-spacing:1px}
+
+  .section{
+    margin-top:14px;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.24);
+    background:rgba(255,255,255,.22);
+    backdrop-filter:blur(14px);
+    box-shadow:0 10px 40px rgba(40,10,12,.16);
+  }
+  .section .hd{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 16px;
+    background:linear-gradient(180deg, rgba(255,247,239,.86), rgba(255,241,228,.72));
+    border-bottom:1px solid rgba(42,23,20,.10);
+  }
+  .section .hd .h{
+    font-family:"Noto Sans SC",sans-serif;
+    font-size:12px;
+    letter-spacing:6px;
+    color:rgba(122,0,19,.78);
+  }
+  .section .bd{padding:14px 16px 16px;background:linear-gradient(180deg, rgba(255,247,239,.78), rgba(255,241,228,.62))}
+
+  .letter{font-size:15px;line-height:2.05;color:rgba(42,23,20,.92)}
+  .letter .hi{color:#7a0013;font-weight:800;letter-spacing:2px}
+  .letter .hl{color:#7a0013;font-weight:900}
+
+  .rows{display:flex;flex-direction:column;gap:10px}
+  .row{display:flex;gap:12px;align-items:flex-start;padding:12px 12px;border:1px solid rgba(42,23,20,.12);border-radius:14px;background:rgba(255,255,255,.66)}
+  .row .k{flex:0 0 64px;font-family:"Noto Sans SC",sans-serif;font-size:11px;letter-spacing:2px;color:var(--muted);padding-top:2px}
+  .row .v{flex:1;font-size:14px;line-height:1.7}
+  .row .v a{color:#7a0013;text-decoration:none;border-bottom:1px dashed rgba(122,0,19,.35)}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    text-decoration:none;
+    border:1px solid rgba(42,23,20,.18);
+    background:rgba(255,255,255,.70);
+    color:var(--ink);
+    padding:13px 12px;
+    border-radius:14px;
+    font-family:"Noto Sans SC",sans-serif;
+    font-size:13px;
+    letter-spacing:2px;
+    cursor:pointer;
+    user-select:none;
+  }
+  .btn.primary{border-color:transparent;background:linear-gradient(135deg,var(--gold1),var(--gold2));color:#7a0013;font-weight:800}
+
+  .fine{margin-top:14px;text-align:center;color:rgba(255,255,255,.76);font-family:"Noto Sans SC",sans-serif;font-size:12px;letter-spacing:2px}
+
+  @media print{
+    body{background:#fff;padding:0;display:block}
+    .topbar{display:none}
+    .phone{width:100%}
+    .section{box-shadow:none}
+  }
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="topbar">
+    <div class="brand">
+      <div class="t1">百日宴邀请函</div>
+      <div class="t2">诚邀您拨冗莅临</div>
+    </div>
+    <a class="chip" href="https://uri.amap.com/marker?poiid=B0017836NQ&src=anhe_100days&callnative=1" target="_blank" rel="noopener">地图导航</a>
+  </div>
+
+  <div class="card hero">
+    <div class="photo">
+      <img id="baby" src="https://yaccc.github.io/1111.png" alt="宝宝照片"/>
+    </div>
+
+    <div class="content">
+      <div class="headline">
+        <div class="cn">谢安禾 · 百日宴</div>
+        <div class="sub">愿平安喜乐 · 茁壮成长</div>
+      </div>
+
+      <div class="meta">
+        <div class="item">
+          <div class="k">日期</div>
+          <div class="v">2026 年 7 月 19 日<small>星期日</small></div>
+        </div>
+        <div class="item">
+          <div class="k">时间</div>
+          <div class="v">中午 12:08<small>12:28 入席</small></div>
+        </div>
+        <div class="item" style="grid-column:1 / -1">
+          <div class="k">地点</div>
+          <div class="v">重庆希尔顿酒店 · 鸿图鸿业厅<small><a href="https://uri.amap.com/marker?poiid=B0017836NQ&src=anhe_100days&callnative=1" target="_blank" rel="noopener">高德地图导航</a></small><small>酒店地下 B2-B4 免费停车</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="hd"><div class="h">邀 请 函</div></div>
+    <div class="bd">
+      <div class="letter" id="letter">
+        <div class="hi">尊敬的 <span id="guest">[宾客姓名]</span> 您好：</div>
+        <div>时光荏苒，转眼间小女已满百日。</div>
+        <div>兹定于 <span class="hl">2026 年 7 月 19 日（星期天）中午 12:08</span>，于 <span class="hl">重庆希尔顿酒店 · 鸿图鸿业厅</span> 举办爱女 <span class="hl">谢安禾</span> 的百日宴。</div>
+        <div>此番设宴，一来答谢各位亲友对我们的关照与厚爱；二来祝愿爱女在众长辈的关爱下，平安喜乐，茁壮成长。</div>
+        <div>略备薄宴，恭候台光。期待您的到来，与我们共享这份喜悦与温馨。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="hd"><div class="h">宴 会 信 息</div></div>
+    <div class="bd">
+      <div class="rows">
+        <div class="row"><div class="k">席设</div><div class="v">重庆希尔顿酒店 · 鸿图鸿业厅</div></div>
+                        <div class="row"><div class="k">邀请人</div><div class="v">谢照东 &amp; 郑智慧　敬邀</div></div>
+      </div>
+</div>
+  </div>
+
+  <div class="fine">谢照东 &amp; 郑智慧 · 2026.07.19 · 重庆希尔顿酒店</div>
+</div>
+
+<script>
+  const img = document.getElementById('baby');
+  img.addEventListener('error', () => {
+    img.alt = '图片加载失败：请确认图片链接可访问';
+  });
+
+  const params = new URLSearchParams(location.search);
+  const name = params.get('name');
+  if (name) {
+    document.getElementById('guest').textContent = name;
+  }
+</script>
+</body>
+</html>
